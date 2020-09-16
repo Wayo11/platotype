@@ -6,10 +6,19 @@
 <meta name="viewport" content="width=device-width">
 <style>
 	$color-plarailers: #00b5ee;
-
-.p-navbar {
-  background-color: $color-plarailers;
+.navbar.is-fixed-top{
+    top: 0;
 }
+.navbar.is-fixed-bottom, .navbar.is-fixed-top {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+}
+.p-navbar {
+    background-color: #00b5ee;
+}
+
 
 .p-navbar-logo {
   margin-top: -8px;
@@ -28,6 +37,67 @@
 
 .p-navbar .navbar-item:hover {
   background-color: transparent;
+}
+	
+    top: 0;
+}
+.navbar.is-fixed-bottom, .navbar.is-fixed-top {
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 30;
+}
+.p-navbar {
+    background-color: #00b5ee;
+}
+.navbar {
+    background-color: #fff;
+    min-height: 3.25rem;
+    position: relative;
+    z-index: 30;
+}
+.breadcrumb, .button, .delete, .file, .is-unselectable, .modal-close, .pagination-ellipsis, .pagination-link, .pagination-next, .pagination-previous, .tabs {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+nav {
+    display: block;
+}
+body {
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+body, button, input, select, textarea {
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+html {
+    background-color: #fff;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
 }
 	
 #header{
