@@ -5,10 +5,39 @@
 <meta name="description" content="運転体験予約">
 <meta name="viewport" content="width=device-width">
 <style>
+	$color-plarailers: #00b5ee;
+
+.p-navbar {
+  background-color: $color-plarailers;
+}
+
+.p-navbar-logo {
+  margin-top: -8px;
+  margin-bottom: -8px;
+  margin-left: -4px;
+  margin-right: 4px;
+  width: 52px;
+  height: 52px;
+  background-image: url(/assets/img/icon.jpg);
+  background-size: 100%;
+}
+
+.p-navbar .navbar-menu {
+  background-color: $color-plarailers;
+}
+
+.p-navbar .navbar-item:hover {
+  background-color: transparent;
+}
+	
 #header{
-	background-color:aqua;
+	background-color:#00b5ee;
     text-align: center;
     height:200px;
+    position:fixed;
+    top:0px;
+    left:opx;
+	width:100%;
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -47,6 +76,32 @@
 </head>
 
 <body>
+	<nav class="navbar is-fixed-top is-unselectable p-navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-white" href="/">
+        <span class="p-navbar-logo"></span>
+        <span class="p-navbar-text">東京大学プラレーラーズ</span>
+      </a>
+      <a role="button" class="navbar-burger burger has-text-white" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item has-text-white" href="/gogatsusai/index.html">
+          五月祭特設ページ
+        </a>
+        <a class="navbar-item has-text-white" href="/posts/">
+          記事一覧
+        </a>
+        <a class="navbar-item has-text-white" href="/welcome/">
+          加入を考えている方へ
+        </a>
+      </div>
+    </div>
+  </nav>
 
 <!--赤い所に表示される内容-->
 <header id="header">
